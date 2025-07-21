@@ -1,0 +1,36 @@
+# EditorConfig helps maintain consistent coding styles across different editors and IDEs.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+indent_size = 4
+max_line_length = 170
+quote_type = single
+semi = true
+trailing_comma = all
+bracket_spacing = true
+bracket_same_line = true
+arrow_parens = always
+prose_wrap = preserve
+quote_props = as-needed
+jsx_quote_type = single
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Override for server.js
+[index.js]
+indent_size = 1
+max_line_length = 160
+semi = true
+
+# Override for files in routes folder
+[routes/*.js]
+indent_size = 1
+max_line_length = 120
+semi = true
